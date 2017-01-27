@@ -1,2 +1,0 @@
-# Desturm
-Desturm Projects
