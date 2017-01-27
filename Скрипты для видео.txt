@@ -1,0 +1,253 @@
+Для установки видео в шапку:
+1) Меняем VIDEO_ID на идентификатор видео которое нужно вставить 
+2) Меняем BLOCK_ID на идентификатор блока, к которому будет применяться видео-обложка
+
+<!-- Видео в шапку -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://www.seanmccambridge.com/tubular/js/jquery.tubular.1.0.js"></script>
+
+<script>
+$('document').ready(function() {
+	var options = { videoId: 'VIDEO_ID', start: 1 };
+	$('#BLOCK_ID').tubular(options);
+});
+</script>
+
+<style>
+.page_container{
+    background: 0% 0% no-repeat transparent;
+}
+</style>
+<!-- /Видео в шапку -->
+
+
+--------------------------------------------------------------------------------------
+
+
+Для установки попапа нужно:
+1) Установить стили попапа в HEAD
+2) Установить скрипт попапа в HEAD
+3) Установить ссылки на открытие попапа на нужные кнопки
+4) Установить стили наведения на кнопку по желанию
+5) Меняем VIDEO_ID !ТОЛЬКО В ССЫЛКАХ! на идентификаторы нужных нам видео. Не трогаем videoid в скрипте!
+
+
+<!-- Попап стили (1 ПУНКТ) -->
+ <style type="text/css">
+  #Wrapp,#Wrapp2, #Wrapp3,#Wrapp4, #Wrapp5 {
+ top:0;
+  left:0;
+ position:fixed;
+ background-color: rgba(0,0,0,0.85);
+ width:100%;
+ height:100%;
+ z-index:10000;
+}
+#tt,#tt2,#tt3,#tt4,#tt5 {
+  position:relative;
+  background-color:#fff;
+  width:800px;
+  padding: 12px 12px 12px 12px;
+  height:400px;
+  margin:100px auto auto auto;
+    background-repeat: no-repeat;
+    border-color: #a6a6a6;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+
+}
+.video_mod .close{
+text-align: right;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url(http://media.lpgenerator.ru/images/91135/cross-popup.png);
+    opacity: 0.3;
+    cursor: pointer;
+}
+.video_mod .close:hover{
+opacity: 1;
+}
+.open_mod{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-indent: -9999px;
+}
+  </style>
+<!-- /Попап стили -->
+
+
+<!-- _____________________________ НАЧАЛО ЮТУБ ________________________________ -->
+
+
+<!-- Скрипты YouTube попап (2 ПУНКТ) -->
+<div id="Wrapp" style="display:none" onclick="openbox2('Wrapp')">
+<div id='tt' class="video_mod"><div class="close" onclick="openbox2('Wrapp')"></div>
+
+<script type="text/javascript"> 
+
+function openbox(id,videoid) { 
+
+$("#" + id +" iframe").attr("src","https://www.youtube.com/embed/" + videoid + "?rel=0&amp;showinfo=0") 
+var div = document.getElementById(id); 
+if(div.style.display == 'block') { 
+div.style.display = 'none'; 
+} 
+else { 
+div.style.display = 'block'; 
+} 
+}
+
+function openbox2(id,tt) { 
+var div = document.getElementById(id); 
+var tt_div = document.getElementById(tt); 
+if(div.style.display == 'block') { 
+div.style.display = 'none'; 
+$("#" + id +" iframe").attr("src",$("#" + id +" iframe").attr("src"))
+} 
+else { 
+div.style.display = 'block'; 
+} 
+}
+
+</script>
+
+<object width="800" height="400"><param name="movie" value="http://www.youtube.com/v/1&hl=ru_RU&fs=1&rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><iframe src="http://www.youtube.com/v/1&hl=ru_RU&fs=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="800" height="400"></iframe></object>
+
+</div>
+</div>
+<!-- /Скрипты YouTube попап -->
+
+
+
+
+
+<!-- Кнопка для ЮТУБ попапа (3 ПУНКТ) -->
+<a href="#" class="open_mod" onclick="
+openbox('Wrapp','VIDEO_ID');return false;" >
+<div class="overflow"></div>
+<div class="overflow_ico" id="video_open"></div>
+</a>
+<!-- /Кнопка для ЮТУБ попапа -->
+
+
+<!-- _____________________________ КОНЕЦ ЮТУБ ________________________________ -->
+
+<!-- _____________________________ НАЧАЛО ВИМЕО ________________________________ -->
+
+
+<!-- Скрипты Vimeo попап (2 ПУНКТ) -->
+<div id="Wrapp" style="display:none">
+<div id='tt' class="video_mod"><div class="close" onclick="openbox2('Wrapp')"></div>
+
+<script type="text/javascript"> 
+
+function openbox(id,videoid) { 
+
+$("#" + id +" iframe").attr("src","https://player.vimeo.com/video/" + videoid) 
+var div = document.getElementById(id); 
+if(div.style.display == 'block') { 
+div.style.display = 'none'; 
+} 
+else { 
+div.style.display = 'block'; 
+} 
+}
+
+function openbox2(id,tt) { 
+var div = document.getElementById(id); 
+var tt_div = document.getElementById(tt); 
+if(div.style.display == 'block') { 
+div.style.display = 'none'; 
+$("#" + id +" iframe").attr("src",$("#" + id +" iframe").attr("src"))
+} 
+else { 
+div.style.display = 'block'; 
+} 
+}
+
+</script>
+
+<object width="800" height="400"><param name="movie" value="https://player.vimeo.com/video/"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><iframe src="https://player.vimeo.com/video/" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></object>
+
+</div>
+</div>
+<!-- /Скрипты Vimeo попап -->
+
+
+
+<!-- Кнопка Vimeo попапа (3 ПУНКТ) -->
+<a href="#" class="open_mod" onclick="
+openbox('Wrapp','VIDEO_ID');return false;" >
+<div class="overflow"></div>
+<div class="overflow_ico" id="video_open"></div>
+</a>
+<!-- /Кнопка Vimeo попапа -->
+
+
+<!-- _____________________________ КОНЕЦ ВИМЕО ________________________________ -->
+
+
+<!-- стандартный айфрейм вимео -->
+<iframe src="https://player.vimeo.com/video/199141104" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/199141104">Магазин обоев FINEWALL.RU</a> from <a href="https://vimeo.com/videoupakovka">Alex.Borisov VIDEO-UPAKOVKA.RU</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<!-- /стандартный айфрейм вимео -->
+
+
+
+
+<!-- Стили при наведении на видосы (4 ПУНКТ) -->
+<style>
+.open_mod, .overflow, .overflow_ico {
+-webkit-transition: -webkit- all 1s cubic-bezier(.075,.82,.165,1);
+transition: -webkit- all 1s cubic-bezier(.075,.82,.165,1);
+transition:  all 1s cubic-bezier(.075,.82,.165,1);
+transition: all 1s cubic-bezier(.075,.82,.165,1),-webkit-transform 1s cubic-bezier(.075,.82,.165,1);
+}
+
+.overflow {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background-color: #000;
+opacity: 0;
+}
+.open_mod:hover .overflow {
+opacity: 0.7;
+}
+.overflow_ico {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background-size: 80px;
+background-repeat: no-repeat;
+background-position: 50% 50%;
+opacity: 0;
+filter: blur(5px);
+transform: scale(0.9);
+}
+.open_mod:hover .overflow_ico {
+transform: scale(1);
+background-position: 50% 50%;
+opacity: 1;
+filter: blur(0px);
+}
+
+#video_open{
+background-image: url(http://media.lpgenerator.ru/images/91135/playico.png);
+}
+#img_open{
+background-image: url(http://media.lpgenerator.ru/images/91135/imgico.png);
+}
+</style>
+
+<!-- /Стили при наведении на видосы -->
