@@ -1,0 +1,35 @@
+<div id="Wrapp" style="display:none">
+<div id='tt' class="video_mod"><div class="close" onclick="openbox2('Wrapp')"></div>
+
+<script type="text/javascript"> 
+
+function openbox(id,videoid) { 
+
+$("#" + id +" iframe").attr("src","https://player.vimeo.com/video/" + videoid) 
+var div = document.getElementById(id); 
+if(div.style.display == 'block') { 
+div.style.display = 'none'; 
+} 
+else { 
+div.style.display = 'block'; 
+} 
+}
+
+function openbox2(id,tt) { 
+var div = document.getElementById(id); 
+var tt_div = document.getElementById(tt); 
+if(div.style.display == 'block') { 
+div.style.display = 'none'; 
+$("#" + id +" iframe").attr("src",$("#" + id +" iframe").attr("src"))
+} 
+else { 
+div.style.display = 'block'; 
+} 
+}
+
+</script>
+
+<object width="800" height="400"><param name="movie" value="https://player.vimeo.com/video/"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><iframe src="https://player.vimeo.com/video/199141104" width="800" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></object>
+
+
+</div></div>
