@@ -1,0 +1,100 @@
+
+<script>
+  /* Затемнение обложки альбома */
+  jq_182('#block-new105').mouseover(function() {
+    jq_182(this).addClass('mask');
+  });
+  /* Возврат к исходному состоянию */
+  jq_182('#block-new105').mouseleave(function() {
+    jq_182(this).removeClass('mask');
+  });
+
+  jq_182('#block-new105').on('click', function() {
+    jq_182(this).lightGallery({
+      dynamic: true,
+      download: false,
+      dynamicEl: [{
+"src": 'http://media.lpgenerator.ru/images/91135/img0116.jpg',
+'thumb': 'http://media.lpgenerator.ru/images/91135/img0116.jpg',
+   }, {
+"src": 'http://media.lpgenerator.ru/images/91135/img0120.jpg',
+'thumb': 'http://media.lpgenerator.ru/images/91135/img0120.jpg',
+   }, {
+"src": 'http://media.lpgenerator.ru/images/91135/img0148.jpg',
+'thumb': ' http://media.lpgenerator.ru/images/91135/img0148.jpg',
+   }, {
+"src": 'http://media.lpgenerator.ru/images/91135/img0149.jpg',
+'thumb': 'http://media.lpgenerator.ru/images/91135/img0149.jpg',
+      }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0156.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0156.jpg',
+      }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0203.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0203.jpg',
+      }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0236.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0236.jpg',
+      }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0239.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0239.jpg',
+      }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0246.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0246.jpg',
+      }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0252.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0252.jpg',
+      }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0255.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0255.jpg',
+      }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0257.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0257.jpg',
+      }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0259.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0259.jpg',
+      }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0262.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0262.jpg',
+      }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0266.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0266.jpg',
+      }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0274.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0274.jpg',
+      }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0280.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0280.jpg',
+      }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0282.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0282.jpg',
+      }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0284.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0284.jpg',
+      }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0288.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0288.jpg',
+      }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0290.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0290.jpg',
+      }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0464.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0464.jpg',
+     }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0473.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0473.jpg',
+      }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0477.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0477.jpg',
+      }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0484.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0484.jpg',
+      }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0498.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0498.jpg',
+  }, {
+        "src": 'http://media.lpgenerator.ru/images/91135/img0500.jpg',
+        'thumb': 'http://media.lpgenerator.ru/images/91135/img0500.jpg',
+ }]
+    })
+  });
+  </script>
