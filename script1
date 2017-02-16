@@ -102,10 +102,6 @@ margin-top: 15px;
   margin-bottom: 15px;
   left: 60px;
 }
-#header4 {
-  font-size: 14px;
-margin-top: 10px;
-}
 </style>
 
 <script>
@@ -120,7 +116,7 @@ jq_144(function($) {
     $("#block-new116").show();
     $("#block-new117").show();
     $("#header2").show();
-    $("#block-new124 div[data-name='widget_1']").css( "width","=200");
+    $("#overlay-block-new111 > div.popup").css( "min-height","160px");
   });
 
   $('#block-new116').click(function(){
@@ -130,7 +126,7 @@ jq_144(function($) {
     $("#block-new120").show();
     $("#block-new121").show();
     $("#header3").show();
-
+    $("#overlay-block-new111 > div.popup").css( "min-height","180px");
   });
 
   $('#block-new117').click(function(){
@@ -140,7 +136,8 @@ jq_144(function($) {
     $("#block-new124").show();
     $("#block-new125").show();
     $("#header4").show();
-
+    $("#block-new124 [name='widget_0']").css( "width","200");
+    $("#overlay-block-new111 > div.popup").css( "height","230");
   });
   
   $('#block-new666').click(function(){
