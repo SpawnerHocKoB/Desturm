@@ -1,0 +1,228 @@
+<style>
+#lotinfo-header-img {
+  margin-left: 225px;
+  top: -35px;
+  position: absolute;
+}
+.head-text {
+  text-align: center; font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+text-transform: uppercase;
+display: block;
+width: 460px;
+margin: auto;
+margin-top: 15px;
+}
+#lotinfo-promo-img {
+  margin-left: 300px;
+}
+#lotinfo-promo-text {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  margin-top: 10px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+#orange-text {
+  color: #d46000;
+}
+
+#block-new90 {
+  margin-top: -60px;
+  margin-left: -25px;
+}
+#block-new99{
+  margin-top: -60px;
+  margin-left: -60px;
+}
+#lotinfo-desk-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 90%;
+  margin-top: 130px;
+  padding-bottom: 10px;
+  padding-left: 165px;
+}
+#white-bottom-line {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -2;
+}
+#grey-bottom-line {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  background-color: #e5e5e5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: -1;
+}
+#xls-icon {
+  position: absolute;
+  bottom: 15px;
+  left: 90px;
+}
+#left-input {
+  position: absolute;
+  bottom: 106px;
+  left: 10px;
+  width: 185px;
+}
+#right-input {
+  position: absolute;
+  bottom: 106px;
+  left: 205px;
+  width: 185px;
+}
+
+#lotinfo-bold-text-sub {
+  position: absolute;
+  text-align: center; font-family: 'Open Sans', sans-serif;
+  font-size: 200%;
+  top: 150px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  left: 160px;
+}
+#lotinfo-promo-text-sub {
+  position: absolute;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  top: 270px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  left: 60px;
+}
+#header4 {
+  font-size: 14px;
+margin-top: 10px;
+}
+</style>
+
+<script>
+var popUp = '#overlay-block-new111 .popup';
+
+jq_144(function($) {
+  
+  $('#block-new91').click(function(){
+    $("#block-new88").hide();
+    $("#block-new91").hide();
+    $("#header1").hide();
+    $("#block-new116").show();
+    $("#block-new117").show();
+    $("#header2").show();
+    $("#block-new124 div[data-name='widget_1']").css( "width","=200");
+  });
+
+  $('#block-new116').click(function(){
+    $("#block-new116").hide();
+    $("#block-new117").hide();
+    $("#header2").hide();
+    $("#block-new120").show();
+    $("#block-new121").show();
+    $("#header3").show();
+
+  });
+
+  $('#block-new117').click(function(){
+    $("#block-new116").hide();
+    $("#block-new117").hide();
+    $("#header2").hide();
+    $("#block-new124").show();
+    $("#block-new125").show();
+    $("#header4").show();
+
+  });
+  
+  $('#block-new666').click(function(){
+    $(popUp + ' .close').click();
+  });
+  
+  $('#block-new99').click(function(){
+    jq_144('#form_submit_message').hide();
+  });
+  
+  $(document).ready(function(){
+    $("#block-new90").hide();
+    $("#block-new99").hide();
+    
+    $(popUp).css({'padding-bottom': '0px', 'padding-left': '0px', 'padding-right': '0px'});
+    $(popUp + ' .close').css({'background': 'url(http://media.lpgenerator.ru/images/91135/zakryit_i2cwGFt.png)'});
+    $(popUp).append('<img src="http://media.lpgenerator.ru/images/91135/psbabr.png" width="70" height="70" id="lotinfo-header-img">');
+    $(popUp).append('<p class="head-text" id="header1">Вам интересно получить полный набор инструментов системной работы с командой сотрудников и руководителей?</p>');
+    $(popUp).append('<p class="head-text" id="header2">Описание формулы делегирования не вызывает у вас доверия?</p>');
+    $("#header2").hide();
+    $(popUp).append('<p class="head-text" id="header3">Оставьте, пожалуйста, свой телефон, нам хочется снять ваши сомнения, мы перезвоним в течение дня</p>');
+    $("#header3").hide();
+    $(popUp).append('<p class="head-text" id="header4">Значит ваш вопрос сложнее, чем мы ожидали, напишите, пожалуйста, его в этой форме:</p>');
+    $("#header4").hide();
+    $("#block-new88").appendTo(popUp);
+    $("#block-new91").appendTo(popUp);
+    $("#block-new116").appendTo(popUp);
+    $("#block-new117").appendTo(popUp);
+    $("#block-new116").hide();
+    $("#block-new117").hide();
+    $("#block-new120").appendTo(popUp);
+    $("#block-new121").appendTo(popUp);
+    $("#block-new120").hide();
+    $("#block-new121").hide();
+    $("#block-new124").appendTo(popUp);
+    $("#block-new125").appendTo(popUp);
+    $("#block-new124").hide();
+    $("#block-new125").hide();
+    $("#block-new90").appendTo(popUp);
+    $("#block-new99").appendTo(popUp);
+    $(popUp).append('<img src="http://media.lpgenerator.ru/images/362311/input.png#size_245x59" width="245" height="59" id="left-input">');
+    $(popUp).append('<img src="http://media.lpgenerator.ru/images/362311/input.png#size_245x59" width="245" height="59" id="right-input">');
+    $("#left-input").hide();
+    $("#right-input").hide();
+    $(popUp).append('<p id="lotinfo-bold-text-sub">ВАША ЗАЯВКА<br>УСПЕШНО ОТПРАВЛЕНА</p>');
+    $(popUp).append('<p id="lotinfo-promo-text-sub">В течение нескольких минут вам на почту придет подтверждение на<br>рассылку. После подтвреждения с вашей стороны - придет список сервисов</p>');
+    $("#lotinfo-bold-text-sub").hide();
+    $("#lotinfo-promo-text-sub").hide();
+    //$(popUp).append('<span id="white-bottom-line"></span>');
+    
+    console.log('success');
+  });
+});
+</script>
+
+<script>
+jq_144('#block-new90').on('submit', '.our_form', function() {
+  var form = jq_144(this);
+  
+  jq_144('#lp_form_target').on('load', function() {
+    timerName255 = setInterval(function() {
+      if (jq_144('#form_submit_message').css('display') == 'block') {
+        jq_144('#form_submit_message').hide();
+        clearInterval(timerName255);
+        $("#block-new88").hide(); // Получить
+        $("#block-new91").hide(); // Нет
+        $("#block-new90").hide(); // Форма
+        $("#block-new99").hide(); // Сабмит Формы
+        $("#header2").hide();
+        $("#left-input").hide();
+        $("#right-input").hide();
+        $("#header1").hide();
+        $("#lotinfo-promo-text").hide();
+        $("#grey-bottom-line").hide();
+        $("#xls-icon").hide();
+        $("#lotinfo-desk-text").hide();
+        $("#lotinfo-promo-img").css({'margin-bottom': '-150px'});
+        $("#lotinfo-bold-text-sub").show();
+        $("#lotinfo-promo-text-sub").show();
+        $(popUp).css({'padding-bottom': '130px'});
+      }
+    }, 1);
+  });
+});
+</script>
