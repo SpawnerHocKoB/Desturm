@@ -26,7 +26,7 @@ function BratishkinBot() {
         },
         image: function() {
             return new Promise(function(resolve, reject) {
-                fetch('https://raw.githubusercontent.com/S1ROZHA/BratishkinPixelBot/master/test.json').then(function(data) {
+                fetch('https://gist.githubusercontent.com/SpawnerHocKoB/2a0a17c713d48b22de0709fc61d8f44f/raw/6c049bd2264bcaf48d88665adb1fa541a13f0c32/navalny.json').then(function(data) {
                         data.json().then(function(answer){
                             resolve(answer.currentTarget);
                         }).catch(function(e) {
