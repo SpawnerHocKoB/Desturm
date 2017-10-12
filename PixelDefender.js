@@ -13,7 +13,7 @@
 function BratishkinBot() {
     window.BratishkinBot = BratishkinBot;
     BratishkinBot.url = {
-        script: 'https://s1rozha.github.io/BratishkinPixelBot/PixelDefender.js'
+        script: 'https://raw.githubusercontent.com/SpawnerHocKoB/Desturm/master/PixelDefender.js'
     };
     BratishkinBot.refreshTime = 300;
     BratishkinBot.pts = 30;
